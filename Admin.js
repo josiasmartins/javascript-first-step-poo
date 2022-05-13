@@ -9,6 +9,11 @@ export default class Admin extends User {
         return `${this.nome}`
     }
 
+    exibirInfos() {
+        // const object = this.#montaObjeto();
+        return `${this.nome}, ${this.role}, ${this.ativo}`;
+    }
+
     criarCurso(nomeDoCurso, vagas) {
         return `Curso criado ${nomeDoCurso} criado com ${vagas} vagas`;
     }
